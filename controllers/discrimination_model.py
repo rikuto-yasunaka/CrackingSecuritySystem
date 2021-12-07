@@ -47,4 +47,4 @@ class MachineLerning(object):
     def judgeConnection(self, connection):
         connection = self._mm.transform(connection)
         result = self._svc.predict(connection)
-        return result
+        return result[0]
